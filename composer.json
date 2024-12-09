@@ -1,11 +1,10 @@
 {
-    "name": "jketelaar/php-kiyoh-api",
+    "name": "vergelijkgroep/php-kiyoh-api",
     "type": "library",
     "authors": [
         {
-            "name": "JKetelaar",
-            "email": "jeroen@ketelaar.me",
-            "homepage": "http://jketelaar.nl/"
+            "name": "Keuze.nl",
+            "homepage": "https://www.keuze.nl/"
         }
     ],
     "description": "Allows you to interact with KiyOh using PHP",
@@ -14,7 +13,7 @@
         "api",
         "php"
     ],
-    "homepage": "https://github.com/JKetelaar/PHP-Kiyoh-API",
+    "homepage": "https://github.com/vergelijkgroep/php-kiyoh-api",
     "license": "GPL-3.0+",
     "require": {
         "php": "^8.0",
@@ -28,7 +27,7 @@
     },
     "autoload": {
         "psr-0": {
-            "JKetelaar": "src/"
+            "keuze": "src/"
         }
     }
 }
