@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace JKetelaar\Kiyoh\Tests\Unit\Model;
 
-use JKetelaar\Kiyoh\Model\Company;
-use JKetelaar\Kiyoh\Model\Review;
+use keuze\Kiyoh\Model\Company;
+use keuze\Kiyoh\Model\Review;
 use PHPUnit\Framework\TestCase;
 
 class CompanyTest extends TestCase {

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace JKetelaar\Kiyoh\Tests\Unit\Factory;
+namespace keuze\Kiyoh\Tests\Unit\Factory;
 
-use JKetelaar\Kiyoh\Factory\ReviewFactory;
-use JKetelaar\Kiyoh\Model\Company;
+use keuze\Kiyoh\Factory\ReviewFactory;
+use keuze\Kiyoh\Model\Company;
 use PHPUnit\Framework\TestCase;
 
 class ReviewFactoryTest extends TestCase {

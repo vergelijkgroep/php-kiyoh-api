@@ -19,7 +19,6 @@
         "php": "^8.0",
         "ext-simplexml": "*",
         "guzzlehttp/guzzle": "^7.5",
-        "guzzlehttp/guzzle": "^6.2 || ^7.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.13",
@@ -27,7 +26,7 @@
     },
     "autoload": {
         "psr-0": {
-            "keuze": "src/"
+            "keuze\\kiyoh": "src/"
         }
     }
 }

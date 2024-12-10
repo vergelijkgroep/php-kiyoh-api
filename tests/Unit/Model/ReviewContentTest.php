@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace JKetelaar\Kiyoh\Tests\Unit\Model;
+namespace keuze\Kiyoh\Tests\Unit\Model;
 
-use JKetelaar\Kiyoh\Model\ReviewContent;
+use keuze\Kiyoh\Model\ReviewContent;
 use PHPUnit\Framework\TestCase;
 
 class ReviewContentTest extends TestCase {

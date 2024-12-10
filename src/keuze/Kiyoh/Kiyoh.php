@@ -6,11 +6,13 @@ declare(strict_types=1);
  * @author JKetelaar
  */
 
-namespace JKetelaar\Kiyoh;
+namespace keuze\Kiyoh;
 
+use Exception;
 use GuzzleHttp\Client;
-use JKetelaar\Kiyoh\Factory\ReviewFactory;
-use JKetelaar\Kiyoh\Model\Company;
+use keuze\Kiyoh\Factory\ReviewFactory;
+use keuze\Kiyoh\Model\Company;
+use keuze\Kiyoh\Model\CompanyResponse;
 
 class Kiyoh
 {
@@ -23,20 +25,24 @@ class Kiyoh
      *
      * @param int    $reviewCount  A number of reviews to retrieve
      */
-    public function __construct(private string $connectorCode, private int $reviewCount = 10)
+    public function __construct(private string $connectorCode, private int $reviewCount = 10, private int $requestTimeout = 2)
     {
         $this->client = new Client();
     }
 
+
     /**
-     * Gets the 10 latest reviews.
+     * Retrieve the company information from the Kiyoh API.
+     *
+     * @return Company The company information.
+     * @throws Exception If an error occurs during the operation.
      */
-    public function getCompany(): Company
+    public function getCompany(): ?Company
     {
         return $this->parseData($this->getContent());
     }
 
-    protected function parseData(?string $content = null): Model\Company
+    protected function parseData(?string $content = null): Company
     {
         if ($content === null) {
             $content = $this->getContent();
@@ -49,7 +55,7 @@ class Kiyoh
 
     public function getContent(): string
     {
-        return $this->getClient()->request('GET', $this->getCompanyURL())->getBody()->getContents();
+        return $this->getClient()->request('GET', $this->getCompanyURL(), ['timeout' => $this->requestTimeout])->getBody()->getContents();
     }
 
     public function getClient(): Client

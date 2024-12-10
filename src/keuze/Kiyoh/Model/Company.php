@@ -6,7 +6,7 @@ declare(strict_types=1);
  * @author JKetelaar
  */
 
-namespace JKetelaar\Kiyoh\Model;
+namespace keuze\Kiyoh\Model;
 
 class Company
 {

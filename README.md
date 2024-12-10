@@ -1,25 +1,32 @@
 # A PHP Kiyoh API
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-[![Build Status](https://travis-ci.com/JKetelaar/PHP-Kiyoh-API.svg?branch=master)](https://travis-ci.com/JKetelaar/PHP-Kiyoh-API)
 
+This is a fork of the (PHP-Kiyoh-API package)[https://github.com/JKetelaar/PHP-Kiyoh-API]. 
+This package adds a timeout param to be passed to the Kiyoh instance. This allows the user to set a max duration of the fetch operation and prevent long response times when Kiyoh api is (partially) down.
 ## How to install?
-Install this project using composer: `composer require jketelaar/php-kiyoh-api`.
+Install this project using composer: `composer require vergelijkgroep/php-kiyoh-api`.
 
 Then start using the API using something like:
 
 ```php
 <?php
 /**
- * @author JKetelaar
+ * @author Keuze.nl
  */
 require_once('vendor/autoload.php');
 
 $connector = 'xxxxxxxx'; // Change with your hash
 $count = 50; // Amount of reviews you want to get
+$timeout = 2; // Max duration in seconds of the fetch operation
 
-$kiyoh = new \JKetelaar\Kiyoh\Kiyoh($connector, $count);
+$kiyoh = new \keuze\Kiyoh\Kiyoh($connector, $count, $timeout);
+
+try {
+    $company = $kiyoh->getCompany();
+} catch (\Throwable $th) {
+    // Handle errors
+    echo $th->getMessage();
+    //throw $th;
+}
 
 $company = $kiyoh->getCompany();
 

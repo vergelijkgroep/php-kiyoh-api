@@ -3,10 +3,10 @@
 declare(strict_types=1);
 
 /**
- * @author JKetelaar
+ * @author keuze
  */
 
-namespace JKetelaar\Kiyoh\Model;
+namespace keuze\Kiyoh\Model;
 
 use DateTime;
 use Exception;

@@ -6,11 +6,11 @@ declare(strict_types=1);
  * @author JKetelaar
  */
 
-namespace JKetelaar\Kiyoh\Factory;
+namespace keuze\Kiyoh\Factory;
 
-use JKetelaar\Kiyoh\Model\Company;
-use JKetelaar\Kiyoh\Model\Review;
-use JKetelaar\Kiyoh\Model\ReviewContent;
+use keuze\Kiyoh\Model\Company;
+use keuze\Kiyoh\Model\Review;
+use keuze\Kiyoh\Model\ReviewContent;
 use SimpleXMLElement;
 
 class ReviewFactory

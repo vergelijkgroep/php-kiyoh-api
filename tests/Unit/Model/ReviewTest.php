@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace JKetelaar\Kiyoh\Tests\Unit\Model;
+namespace keuze\Kiyoh\Tests\Unit\Model;
 
-use JKetelaar\Kiyoh\Model\Review;
-use JKetelaar\Kiyoh\Model\ReviewContent;
+use keuze\Kiyoh\Model\Review;
+use keuze\Kiyoh\Model\ReviewContent;
 use PHPUnit\Framework\TestCase;
 
 class ReviewTest extends TestCase {
@@ -183,7 +183,7 @@ class ReviewTest extends TestCase {
     }
 
     /**
-     * @return \JKetelaar\Kiyoh\Model\Review
+     * @return \Keuze\Kiyoh\Model\Review
      */
     private function createReview(): Review {
         $review = new Review(

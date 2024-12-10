@@ -2,6 +2,7 @@
 /node_modules
 /test.php
 /.idea
+/index.php
 /GUI
 .DS_Store
 
