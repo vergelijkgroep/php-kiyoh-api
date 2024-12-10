@@ -6,13 +6,12 @@ declare(strict_types=1);
  * @author JKetelaar
  */
 
-namespace keuze\Kiyoh;
+namespace Keuze\Kiyoh;
 
 use Exception;
 use GuzzleHttp\Client;
 use keuze\Kiyoh\Factory\ReviewFactory;
 use keuze\Kiyoh\Model\Company;
-use keuze\Kiyoh\Model\CompanyResponse;
 
 class Kiyoh
 {
@@ -29,7 +28,6 @@ class Kiyoh
     {
         $this->client = new Client();
     }
-
 
     /**
      * Retrieve the company information from the Kiyoh API.

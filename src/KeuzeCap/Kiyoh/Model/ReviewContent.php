@@ -6,7 +6,7 @@ declare(strict_types=1);
  * @author JKetelaar
  */
 
-namespace keuze\Kiyoh\Model;
+namespace Keuze\Kiyoh\Model;
 
 class ReviewContent
 {

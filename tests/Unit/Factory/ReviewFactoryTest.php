@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace keuze\Kiyoh\Tests\Unit\Factory;
+namespace Keuze\Kiyoh\Tests\Unit\Factory;
 
 use keuze\Kiyoh\Factory\ReviewFactory;
 use keuze\Kiyoh\Model\Company;

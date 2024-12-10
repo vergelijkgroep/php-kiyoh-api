@@ -6,7 +6,7 @@ declare(strict_types=1);
  * @author keuze
  */
 
-namespace keuze\Kiyoh\Model;
+namespace Keuze\Kiyoh\Model;
 
 use DateTime;
 use Exception;

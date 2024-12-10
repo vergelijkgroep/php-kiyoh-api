@@ -6,7 +6,7 @@ declare(strict_types=1);
  * @author JKetelaar
  */
 
-namespace keuze\Kiyoh\Factory;
+namespace Keuze\Kiyoh\Factory;
 
 use keuze\Kiyoh\Model\Company;
 use keuze\Kiyoh\Model\Review;
