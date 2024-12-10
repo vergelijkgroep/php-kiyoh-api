@@ -8,9 +8,9 @@ declare(strict_types=1);
 
 namespace Keuze\Kiyoh\Factory;
 
-use keuze\Kiyoh\Model\Company;
-use keuze\Kiyoh\Model\Review;
-use keuze\Kiyoh\Model\ReviewContent;
+use Keuze\Kiyoh\Model\Company;
+use Keuze\Kiyoh\Model\Review;
+use Keuze\Kiyoh\Model\ReviewContent;
 use SimpleXMLElement;
 
 class ReviewFactory

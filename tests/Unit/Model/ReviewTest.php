@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Keuze\Kiyoh\Tests\Unit\Model;
 
-use keuze\Kiyoh\Model\Review;
-use keuze\Kiyoh\Model\ReviewContent;
+use Keuze\Kiyoh\Model\Review;
+use Keuze\Kiyoh\Model\ReviewContent;
 use PHPUnit\Framework\TestCase;
 
 class ReviewTest extends TestCase {

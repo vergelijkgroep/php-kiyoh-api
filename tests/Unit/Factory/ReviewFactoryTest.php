@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Keuze\Kiyoh\Tests\Unit\Factory;
 
-use keuze\Kiyoh\Factory\ReviewFactory;
-use keuze\Kiyoh\Model\Company;
+use Keuze\Kiyoh\Factory\ReviewFactory;
+use Keuze\Kiyoh\Model\Company;
 use PHPUnit\Framework\TestCase;
 
 class ReviewFactoryTest extends TestCase {

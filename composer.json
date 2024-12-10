@@ -25,8 +25,8 @@
         "phpunit/phpunit": "^9.5"
     },
     "autoload": {
-        "psr-0": {
-            "keuze\\kiyoh": "src/"
+        "psr-4": {
+            "Keuze\\Kiyoh\\": "src/Keuze/Kiyoh/"
         }
     }
 }

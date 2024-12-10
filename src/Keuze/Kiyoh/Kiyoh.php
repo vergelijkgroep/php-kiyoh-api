@@ -10,8 +10,8 @@ namespace Keuze\Kiyoh;
 
 use Exception;
 use GuzzleHttp\Client;
-use keuze\Kiyoh\Factory\ReviewFactory;
-use keuze\Kiyoh\Model\Company;
+use Keuze\Kiyoh\Factory\ReviewFactory;
+use Keuze\Kiyoh\Model\Company;
 
 class Kiyoh
 {

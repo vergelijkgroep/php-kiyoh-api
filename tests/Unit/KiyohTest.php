@@ -8,7 +8,7 @@ declare(strict_types=1);
 
 namespace JKetelaar\Kiyoh\Tests\Unit;
 
-use keuze\Kiyoh\Kiyoh;
+use Keuze\Kiyoh\Kiyoh;
 use PHPUnit\Framework\TestCase;
 
 final class KiyohTest extends TestCase
