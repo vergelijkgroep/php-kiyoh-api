@@ -2,11 +2,7 @@
 
 declare(strict_types=1);
 
-/**
- * @author JKetelaar
- */
-
-namespace JKetelaar\Kiyoh\Tests\Unit;
+namespace Keuze\Kiyoh\Tests\Unit;
 
 use Keuze\Kiyoh\Kiyoh;
 use PHPUnit\Framework\TestCase;
@@ -18,7 +14,6 @@ final class KiyohTest extends TestCase
 
     public function testKiyoh()
     {
-        // TODO: This will fail on Pull Requests (@see https://github.com/JKetelaar/PHP-Kiyoh-API/pull/16#issuecomment-562236830)
         $kiyohKey = getenv(self::KIYOH_KEY_ENV_KEY);
         $this->assertNotFalse($kiyohKey);
 

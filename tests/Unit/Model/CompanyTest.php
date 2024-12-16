@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace JKetelaar\Kiyoh\Tests\Unit\Model;
+namespace Keuze\Kiyoh\Tests\Unit\Model;
 
 use Keuze\Kiyoh\Model\Company;
 use Keuze\Kiyoh\Model\Review;

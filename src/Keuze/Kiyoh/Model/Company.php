@@ -2,10 +2,6 @@
 
 declare(strict_types=1);
 
-/**
- * @author JKetelaar
- */
-
 namespace Keuze\Kiyoh\Model;
 
 class Company
